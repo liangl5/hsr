@@ -37,27 +37,32 @@
   }
 }
 
-/* Grid Container */
+/* Flex Container */
 .flex-container {
   display: flex;
+  flex-wrap: wrap; /* Allow items to wrap onto the next line */
   gap: 2%;
   margin-top: 2%;
 }
 
+/* In your App.css or another CSS file */
 .left-column {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  padding-left: 2%
+  max-width: 600px; /* Set your desired maximum width */
+  min-width: 300px;
+  width: 100%;      /* Allow it to take up the full width of the parent */
+  box-sizing: border-box; /* Ensure padding is included in width calculation */
 }
+
 
 .right-column {
   display: flex;
   flex-direction: column;
-  flex: 2.5;
-  padding-right: 2%;
+  flex: 2.5; /* Adjust this as needed for proportion */
+  max-width: 600px; /* Set your desired maximum width */
+  min-width: 300px;
 }
 
+/* Centering Items */
 .center-items {
   display: flex;
   align-items: center;
@@ -66,4 +71,11 @@
 
 .textEntry {
   padding-bottom: 10px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) { /* Adjust the breakpoint as needed */
+  .flex-container {
+    flex-direction: column; /* Stack columns */
+  }
 }

@@ -6,11 +6,11 @@ const baseTheme = createTheme({
     h4: {
       fontFamily: 'Raleway, sans-serif',
       fontWeight: 500,
-      fontSize: 38,
+      fontSize: 28,
     },
     body1: {
       fontFamily: 'Raleway, sans-serif',
-      fontSize: 20,
+      fontSize: 16,
     },
     h3: {
       paddingBottom: '10px',
