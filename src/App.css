@@ -36,3 +36,34 @@
     transform: rotate(360deg);
   }
 }
+
+/* Grid Container */
+.flex-container {
+  display: flex;
+  gap: 2%;
+  margin-top: 2%;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-left: 2%
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  flex: 2.5;
+  padding-right: 2%;
+}
+
+.center-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.textEntry {
+  padding-bottom: 10px;
+}
